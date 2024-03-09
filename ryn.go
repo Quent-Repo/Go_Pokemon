@@ -28,7 +28,6 @@ func main() {
 	text1 := canvas.NewText(strconv.Itoa(count)+"/150", color.White)
 	text2 := canvas.NewText("one", color.White)
 	text3 := canvas.NewText("one", color.White)
-
 	Test2 := widget.NewButton("Keep", func() {
 		image.File = image_url
 		image.Refresh()
@@ -49,6 +48,7 @@ func main() {
 	})
 	Print_all := widget.NewButton("Show List", func() {
 		fmt.Println(q)
+		fmt.Println(q[0])
 
 	})
 	//grid := container.New(layout.NewGridWrapLayout(fyne.NewSize(200, 200)), hello, Test2, image, image2)
